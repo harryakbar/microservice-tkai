@@ -25,7 +25,7 @@ SECRET_KEY = '$pza#82jyd#xsh#7a4y+_8%d4ob-0+aqh7^is%dcm5b&sk%o4x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -80,11 +80,11 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': '127.0.0.1',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'addressbook',
+        'USER': 'admin',
+        'PASSWORD': 'qwerty',
+        'HOST': '/cloudsql/tkai-adbook:us-central1:addressbook-instance',
         'PORT': '5432',
     }
 }
@@ -126,7 +126,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/'
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+STATIC_URL = 'http://storage.googleapis.com/adbook-bucket/static/'
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
 CORS_ORIGIN_WHITELIST = (
     'localhost:3000/'

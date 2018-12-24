@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tkai-adbook",
+  "private_key_id": "9b6a922e3ef3277d988991336d9d1abe24a01ae5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCoLCT1NOzEuMz6\nOzqlBrtJA4GnpnKr7H4u6rtuVf/Exz+Gieg+fSCyz5aYFwWFrUEB42YS/l56JPmd\nHb7wUb2oA/GlRbrFIeSmIzf5g0hlRhG49/0TaRv8o+sWJeOXPLRhpg0Xqw0S80oI\n13M8bqEHQLaC+R3D4j9JAvg7BzDLN67ap260MKIuwyaKVBejOVM/LFrkkpgG+4uR\nEbjHLOgRzInqL3CDB1/NcHexRGsxaLTBgNzbmzVbSoTqun8jeeXtpTqXUs4nJQ/x\n3+1MKAk8gGYsJOoKdIeCb+3RdinToof63ATGk+2p2U8J5UKqrZXwcI4DCzKqVP9P\nJFwQgf8XAgMBAAECggEAAlAeNUgP4fOsuPM9OpwAozzlBG6icO/Npwb+i04IxD39\nTQtnP1Ei41tsdc+WJ/KatRoIMdIitZrPT1dAkx/xC1/ksZDEldclCo29RIbM5Uhp\nViuoE4CKT10iJfVhFVINPFXaaeGOp3nL3GvQtr5WaYtlq5TAot4PpawPPQoNGL/a\nwvEFtJB3RE1dx8E+LeHspV8cKMFYEf23BVzYKFNHQbTgKkyU0/RwBqnxTDylQU+0\n3StArgJZOUP6psKloS3jUw0qonfpLx6U14zfEv73keKVCsrFIhjZbEvTKG5BaCtA\nkwQOzecgvt/Z69NyaeDdIWW+LbKVdRxB+UV2MRuxyQKBgQDh49HusNAFYjnbpZlZ\nL6OXk1Sh/vpqHnKQEtXQKQcSYccETwS102V4992EhRQ71IpDfGh1rEpGWrASTGWA\njXmsMpegxk/Xbn1VRdLSjosQAWJa7b2uxQJcy2s6gNidA7B/yEh/1Ccfj6h6mcHO\nLNEVFj+hSZp//7n3ZhvlOUqCmwKBgQC+lsubtK7Dq+bC62j+D5UeROsKFfDDik2r\n8nW5wkZHh6drqNiCgWrpYy1Ior3R6JbE/HU3I01Uh+QvlnMk5lVJZPyLvshzyD1C\nuqSkbAMO1Qkf/+VhfvoJPMUvR2908BWOGT+hniTKid8DrRI3kY9uAeLCsbxvGzUs\nz5s4OLevNQKBgQCm/se6kFiZQk7HxRsjRgbJDhBpWplCTpQfUu1i4JHr0wFQfCJd\nUZUY4xWO3Ntih/RXg+et5ttaO70jKft4GB81YImcQD/SYkqh+ear5tmD0aIm2s96\nHwdqFrCFJa/+FDYtoaGHbw4lVQ0W5gjTJWrFDheoY0OnESUocwJ4aexdtQKBgAIA\nM0L/MpZ7R4DkV8XTBA29S3pfoJds7EPR18qLb5FwqyFGNH+qPCUXFXKdwsBhYLPQ\nsqpRhI5Onuag/bR1do++r6gH6LLOd1Yr/256c83EDsR3O0E6xAU0zh0g8tqXaqKD\nQVfBAUHfEKhJONe8f3T4MBk7JG9GKdi+lTKR5dvBAoGBALe/jHojQJ2BNC5FeytS\nTrIavjSbvGCC8AL0fKsqAJm6RCG3cX4ESAzmWxnqQpbINtffEJUuzgugCWZy7uQE\njv0gw0fz2mC7aHB45605yH9X/iJotZ8FN38xle06ZwH8fPwz+Bmwu+hCIw6t19ae\nSlgaLzKrLSUBBBC6i6EEcSdj\n-----END PRIVATE KEY-----\n",
+  "client_email": "adbook-service-account@tkai-adbook.iam.gserviceaccount.com",
+  "client_id": "115325939388018719820",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/adbook-service-account%40tkai-adbook.iam.gserviceaccount.com"
+}

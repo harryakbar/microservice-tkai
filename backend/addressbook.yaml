@@ -26,45 +26,45 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: addressbook
+  name: adbook
   labels:
-    app: addressbook
+    app: adbook
 spec:
   replicas: 3
   template:
     metadata:
       labels:
-        app: addressbook
+        app: adbook
     spec:
       containers:
-      - name: addressbook-app
+      - name: adbook-app
         # Replace  with your project ID or use `make template`
-        image: gcr.io/tkai-microservice/addressbook
+        image: gcr.io/tkai-adbook/adbook
         # This setting makes nodes pull the docker image every time before
         # starting the pod. This is useful when debugging, but should be turned
         # off in production.
         imagePullPolicy: Always
         env:
             # [START cloudsql_secrets]
-            - name: postgres
+            - name: DATABASE_USER
               valueFrom:
                 secretKeyRef:
                   name: cloudsql
                   key: username
-            - name: postgres
+            - name: DATABASE_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: cloudsql
                   key: password
             # [END cloudsql_secrets]
         ports:
-        - containerPort: 8080
+        - containerPort: 8000
 
       # [START proxy_container]
       - image: gcr.io/cloudsql-docker/gce-proxy:1.05
         name: cloudsql-proxy
         command: ["/cloud_sql_proxy", "--dir=/cloudsql",
-                  "-instances=tkai-microservice:us-central1:addressbook-instance=tcp:5432",
+                  "-instances=tkai-adbook:us-central1:addressbook-instance=tcp:5432",
                   "-credential_file=/secrets/cloudsql/credentials.json"]
         volumeMounts:
           - name: cloudsql-oauth-credentials
@@ -101,14 +101,14 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: addressbook
+  name: adbook
   labels:
-    app: addressbook
+    app: adbook
 spec:
   type: LoadBalancer
   ports:
   - port: 80
-    targetPort: 8080
+    targetPort: 8000
   selector:
-    app: polls
+    app: adbook
 # [END service]
